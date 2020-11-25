@@ -43,4 +43,12 @@ public class MobCoinsPlugin extends JavaPlugin {
 
         cache = new MobCoinsLocalCache();
     }
+
+    @Override
+    public void onDisable() {
+        super.onDisable();
+
+        repository.deleteAllNonActiveUsers();
+        repository.close();
+    }
 }
