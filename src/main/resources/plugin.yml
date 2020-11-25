@@ -1,0 +1,6 @@
+name: MobCoins
+author: yiatzz
+main: br.com.yiatzz.mobcoins.MobCoinsPlugin
+version: 0.1-ALPHA
+commands:
+  mobcoins:
